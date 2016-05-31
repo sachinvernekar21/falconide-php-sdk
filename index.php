@@ -4,7 +4,7 @@ require("./falconide.php");
 require("./email.php");
 require("./row.php");
 
-$falconide = new Falconide("9f18a40c68bc1a701ab315b70ab61834");
+$falconide = new Falconide("<API KEY>");
 
 $email = new Email();
 $email->setFrom("testing@m3m.in");
