@@ -15,7 +15,8 @@ class Falconide {
 	
 	function sendmail($email) {
 		$json_data = $this->createJson($email);
-		$data = "data=" .$json_data;
+		$data =array();
+		$data['data'] = $json_data;
 		print $this->http_post_form($data);
 	}
 	
